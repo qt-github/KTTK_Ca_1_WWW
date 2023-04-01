@@ -1,0 +1,12 @@
+Tạo một project với:
+-  Tên ở dạng MaSoSinhVien-HoVaTen-KTTK.
+-  Buid tool: Gradle hoặc Maven.
+Thực hiện các công việc sau:
+Người ta muốn làm việc với các đối tượng biểu diễn các loại hình dạng  (Cụ  thể  là
+hình chữ  nhật, hình tam giác, hình tròn).  Với mỗi loại hình dạng, người ta cần tính diện
+tích, chu vi của chúng. Ngoài ra, người ta muốn xây dựng một đối tượng hình thang vuông
+bao gồm sự kết hợp giữa một hình chữ nhật và một hình tam giác vuông.
+1.  Hãy xây dựng một  các lớp  sử  dụng Spring Framework  (không  dùng  Springboot)
+giải quyết vấn đề  được nêu.  Trong đó ít nhất mỗi loại cấu hình xml-based, javaannotation-based được dùng 1 lần.
+2.  Một lớp application tạo các thể  hiện của các đối tượng và gọi các phương thức được
+mô tả của chúng.

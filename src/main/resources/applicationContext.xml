@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="HinhChuNhat" class="com.example.kttk_ca_1.HinhChuNhat">
+        <property name="chieuDai" value="5"/>
+        <property name="chieuRong" value="10"/>
+    </bean>
+
+    <bean id="HinhTamGiac" class="com.example.kttk_ca_1.HinhTamGiac">
+        <property name="canhA" value="5"/>
+        <property name="canhB" value="10"/>
+        <property name="canhC" value="15"/>
+    </bean>
+
+    <bean id="HinhTron" class="com.example.kttk_ca_1.HinhTron">
+        <property name="banKinh" value="5"/>
+    </bean>
+
+    <bean id="HinhThangVuong" class="com.example.kttk_ca_1.HinhThangVuong">
+        <property name="chieuCao" value="5"/>
+        <property name="canhDayLon" value="10"/>
+        <property name="canhDayNho" value="15"/>
+    </bean>
+</beans>
