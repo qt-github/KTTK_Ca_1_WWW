@@ -28,9 +28,9 @@ public class KttkCa1Application {
         System.out.println("Chu vi ht = " + ht.tinhCV());
 
         //HinhThangVuong
-        Shape htgv = (Shape) ctx.getBean("HinhThangVuong");
-        System.out.println("Dien tich htgv = " + htgv.tinhDT());
-        System.out.println("Chu vi htgv = " + htgv.tinhCV());
+        Shape htv = (Shape) ctx.getBean("HinhThangVuong");
+        System.out.println("Dien tich htgv = " + htv.tinhDT());
+        System.out.println("Chu vi htgv = " + htv.tinhCV());
 
         //Java-Annotaion-Based Configuration
         ApplicationContext ctx2 = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -51,9 +51,9 @@ public class KttkCa1Application {
         System.out.println("Chu vi ht = " + ht2.tinhCV());
 
         //HinhThangVuong
-        Shape htgv2 = (Shape) ctx2.getBean("HinhThangVuong");
-        System.out.println("Dien tich htgv = " + htgv2.tinhDT());
-        System.out.println("Chu vi htgv = " + htgv2.tinhCV());
+        Shape htv2 = (Shape) ctx2.getBean("HinhThangVuong");
+        System.out.println("Dien tich htgv = " + htv2.tinhDT());
+        System.out.println("Chu vi htgv = " + htv2.tinhCV());
     }
 
 }

@@ -17,9 +17,14 @@
         <property name="banKinh" value="5"/>
     </bean>
 
+    <bean id="HinhTamGiacVuong" class="com.example.kttk_ca_1.HinhTamGiacVuong">
+        <property name="canhA" value="5"/>
+        <property name="canhB" value="10"/>
+        <property name="canhC" value="15"/>
+    </bean>
+
     <bean id="HinhThangVuong" class="com.example.kttk_ca_1.HinhThangVuong">
-        <property name="chieuCao" value="5"/>
-        <property name="canhDayLon" value="10"/>
-        <property name="canhDayNho" value="15"/>
+        <constructor-arg ref="HinhChuNhat"/>
+        <constructor-arg ref="HinhTamGiacVuong"/>
     </bean>
 </beans>

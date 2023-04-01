@@ -23,8 +23,13 @@ public class AppConfig {
         return new HinhTron(5);
     }
 
+    @Bean(name = "HinhTamGiacVuong")
+    public Shape hinhTamGiacVuong() {
+        return new HinhTamGiacVuong(3, 4, 5);
+    }
+
     @Bean(name = "HinhThangVuong")
     public Shape hinhThangVuong() {
-        return new HinhThangVuong(5, 6, 7);
+        return new HinhThangVuong(hinhChuNhat(), hinhTamGiacVuong());
     }
 }

@@ -1,51 +1,41 @@
 package com.example.kttk_ca_1;
 
 public class HinhThangVuong implements Shape {
-    private double canhDayLon;
-    private double canhDayNho;
-    private double chieuCao;
+    private HinhChuNhat hcn;
+    private HinhTamGiacVuong htgv;
 
-    public HinhThangVuong(double canhDayLon, double canhDayNho, double chieuCao) {
-        this.canhDayLon = canhDayLon;
-        this.canhDayNho = canhDayNho;
-        this.chieuCao = chieuCao;
+    public HinhThangVuong(HinhChuNhat hcn, HinhTamGiacVuong htgv) {
+        this.hcn = hcn;
+        this.htgv = htgv;
     }
 
-    public HinhThangVuong() {
-
+    public HinhThangVuong(Shape hinhChuNhat, Shape hinhTamGiacVuong) {
     }
 
-    public double getCanhDayLon() {
-        return canhDayLon;
+    public HinhChuNhat getHcn() {
+        return hcn;
     }
 
-    public void setCanhDayLon(double canhDayLon) {
-        this.canhDayLon = canhDayLon;
+    public void setHcn(HinhChuNhat hcn) {
+        this.hcn = hcn;
     }
 
-    public double getCanhDayNho() {
-        return canhDayNho;
+    public HinhTamGiacVuong getHtgv() {
+        return htgv;
     }
 
-    public void setCanhDayNho(double canhDayNho) {
-        this.canhDayNho = canhDayNho;
+    public void setHtgv(HinhTamGiacVuong htgv) {
+        this.htgv = htgv;
     }
 
-    public double getChieuCao() {
-        return chieuCao;
-    }
-
-    public void setChieuCao(double chieuCao) {
-        this.chieuCao = chieuCao;
-    }
 
     @Override
     public double tinhDT() {
-        return (canhDayLon + canhDayNho) * chieuCao / 2;
+        return hcn.tinhDT() + htgv.tinhDT();
     }
 
     @Override
     public double tinhCV() {
-        return canhDayLon + canhDayNho + 2 * Math.sqrt(chieuCao * chieuCao + (canhDayLon - canhDayNho) * (canhDayLon - canhDayNho) / 4);
+        return hcn.tinhCV() + htgv.tinhCV() - 2 * hcn.getChieuDai();
     }
 }
